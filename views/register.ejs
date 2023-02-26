@@ -1,0 +1,23 @@
+<%- include('layout/header'); -%> <br>
+
+
+<h2 style="text-align: center;">Register Form</h2>
+
+<form action="/register" method="POST" style="border: 1px solid whitesmoke; border-radius: 7px; padding: 10px;">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" style="padding: 5px;" />
+  </div> <br>
+  <div>
+    <label for="email">Yor email:</label>
+    <input type="email" name="email" style="padding: 10px;" />
+  </div> <br>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" style="padding: 5px;"/>
+  </div><br>
+  <button style="margin-left: 80px;" type="submit">Register</button>
+</form>
+
+<%- include('layout/footer'); -%>
+
