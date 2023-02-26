@@ -15,7 +15,6 @@ const {
 } = require("../controllers/controller");
 
 // Authentication operations (Bcrypt and passport local session)
-
 router.use(
   session({
     secret: "secret",

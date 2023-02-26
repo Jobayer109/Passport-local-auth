@@ -1,6 +1,9 @@
 <%- include('layout/header'); -%> <br>
 
-<form action="/login" method="post">
+<h2 style="text-align: center;">Login Form</h2>
+
+
+<form action="/login" method="POST" style="border: 1px solid whitesmoke; border-radius: 7px; padding: 10px;">
   <div>
     <label for="username">Username:</label>
     <input type="text" name="username" style="padding: 5px;"/>
@@ -9,9 +12,9 @@
     <label for="password">Password:</label>
     <input type="password" name="password" style="padding: 5px;" />
   </div> <br>
-  <button style="margin-left: 120px;" type="submit">Login</button>
+  <button style="margin-left: 80px;" type="submit">Login</button>
 </form>
-<a href="/auth/google" style="margin-left: 100px; text-decoration:none ; font-weight: 800; font-size: large;">Login with Google</a>
+
 </main>
 
 <%- include('layout/footer'); -%>

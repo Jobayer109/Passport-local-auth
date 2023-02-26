@@ -36,7 +36,6 @@ const viewRegisterPage = (req, res) => {
 
 // Protected profile page
 const profilePage = (req, res) => {
-  console.log(req);
   if (req.isAuthenticated()) {
     return res.render("profile", { req: req });
   }
